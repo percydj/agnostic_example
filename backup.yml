@@ -15,9 +15,7 @@
  #       content: "{{backup.stdout}}"
  #       dest: "{{inventory_hostname}}.backup"
     
-    - name: configurable backup path
+    - name: configurable backup 
       vyos_config:
+        src: vyos.cfg
         backup: yes
-        backup_options:
-          filename: backup.cfg
-          dir_path: /tmp
