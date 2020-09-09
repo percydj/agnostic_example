@@ -1,6 +1,6 @@
 ---
 - name: BACKUP ALL CONFIGS
-  hosts: routers
+  hosts: vyos-servers
   gather_facts: false
 
   tasks:
