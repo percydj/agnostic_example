@@ -17,5 +17,6 @@
     
     - name: configurable backup 
       vyos_config:
-        src: /tmp/vyos.cfg
+        src: vyos.cfg
+        path: /tmp
         backup: yes
